@@ -13,4 +13,14 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import "BRBaseViewController.h"
+
+    #import "WeiboSDK.h"
+
+    //com.sina.weibo.SNWeiboSDKDemo
+    #define kWeiboAppKey         @"2956417372"
+    #define kWeiboSecretKey      @"58a4feeea602191dced6255a142f0790"
+
+    #define kRedirectURI         @"http://"
+
 #endif

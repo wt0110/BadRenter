@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BRAppDelegate : UIResponder <UIApplicationDelegate>
+@interface BRAppDelegate : UIResponder <UIApplicationDelegate,WeiboSDKDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BRFirstViewController : UIViewController
+@interface BRFirstViewController : BRBaseViewController
 
 @end

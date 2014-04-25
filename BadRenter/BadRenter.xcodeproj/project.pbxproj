@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		933FF0F4190A11B600B86056 /* BRBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933FF0F3190A11B600B86056 /* BRBaseViewController.m */; };
+		933FF0F7190A127500B86056 /* BRLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933FF0F6190A127500B86056 /* BRLoginViewController.m */; };
 		93E803241909FDE7004613BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E803231909FDE7004613BA /* Foundation.framework */; };
 		93E803261909FDE7004613BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E803251909FDE7004613BA /* CoreGraphics.framework */; };
 		93E803281909FDE7004613BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E803271909FDE7004613BA /* UIKit.framework */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		933FF0F2190A11B600B86056 /* BRBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBaseViewController.h; sourceTree = "<group>"; };
+		933FF0F3190A11B600B86056 /* BRBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBaseViewController.m; sourceTree = "<group>"; };
+		933FF0F5190A127500B86056 /* BRLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLoginViewController.h; sourceTree = "<group>"; };
+		933FF0F6190A127500B86056 /* BRLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLoginViewController.m; sourceTree = "<group>"; };
 		93E803201909FDE7004613BA /* BadRenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BadRenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E803231909FDE7004613BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		93E803251909FDE7004613BA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -88,6 +94,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		933FF0F1190A119F00B86056 /* BRViewController */ = {
+			isa = PBXGroup;
+			children = (
+				933FF0F2190A11B600B86056 /* BRBaseViewController.h */,
+				933FF0F3190A11B600B86056 /* BRBaseViewController.m */,
+				933FF0F5190A127500B86056 /* BRLoginViewController.h */,
+				933FF0F6190A127500B86056 /* BRLoginViewController.m */,
+			);
+			path = BRViewController;
+			sourceTree = "<group>";
+		};
 		93E803171909FDE7004613BA = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +138,7 @@
 		93E803291909FDE7004613BA /* BadRenter */ = {
 			isa = PBXGroup;
 			children = (
+				933FF0F1190A119F00B86056 /* BRViewController */,
 				93F1875D190A054F00E43644 /* ThirdPart */,
 				93E803321909FDE7004613BA /* BRAppDelegate.h */,
 				93E803331909FDE7004613BA /* BRAppDelegate.m */,
@@ -281,7 +299,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				933FF0F4190A11B600B86056 /* BRBaseViewController.m in Sources */,
 				93E8033A1909FDE8004613BA /* BRFirstViewController.m in Sources */,
+				933FF0F7190A127500B86056 /* BRLoginViewController.m in Sources */,
 				93E803341909FDE7004613BA /* BRAppDelegate.m in Sources */,
 				93E8033D1909FDE8004613BA /* BRSecondViewController.m in Sources */,
 				93E803301909FDE7004613BA /* main.m in Sources */,

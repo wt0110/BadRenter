@@ -1,5 +1,5 @@
 //
-//  BRSecondViewController.h
+//  BRBaseViewController.h
 //  BadRenter
 //
 //  Created by wangtao on 14-4-25.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BRSecondViewController : BRBaseViewController
+@interface BRBaseViewController : UIViewController
 
 @end
