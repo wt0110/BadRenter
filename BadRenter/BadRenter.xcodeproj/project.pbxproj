@@ -22,6 +22,8 @@
 		93E803481909FDE8004613BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E803271909FDE7004613BA /* UIKit.framework */; };
 		93E803501909FDE8004613BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93E8034E1909FDE8004613BA /* InfoPlist.strings */; };
 		93E803521909FDE8004613BA /* BadRenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E803511909FDE8004613BA /* BadRenterTests.m */; };
+		93F18762190A054F00E43644 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F1875F190A054F00E43644 /* libWeiboSDK.a */; };
+		93F18763190A054F00E43644 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 93F18760190A054F00E43644 /* WeiboSDK.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		93E8034D1909FDE8004613BA /* BadRenterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BadRenterTests-Info.plist"; sourceTree = "<group>"; };
 		93E8034F1909FDE8004613BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		93E803511909FDE8004613BA /* BadRenterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BadRenterTests.m; sourceTree = "<group>"; };
+		93F1875F190A054F00E43644 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
+		93F18760190A054F00E43644 /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
+		93F18761190A054F00E43644 /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +71,7 @@
 				93E803261909FDE7004613BA /* CoreGraphics.framework in Frameworks */,
 				93E803281909FDE7004613BA /* UIKit.framework in Frameworks */,
 				93E803241909FDE7004613BA /* Foundation.framework in Frameworks */,
+				93F18762190A054F00E43644 /* libWeiboSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +121,7 @@
 		93E803291909FDE7004613BA /* BadRenter */ = {
 			isa = PBXGroup;
 			children = (
+				93F1875D190A054F00E43644 /* ThirdPart */,
 				93E803321909FDE7004613BA /* BRAppDelegate.h */,
 				93E803331909FDE7004613BA /* BRAppDelegate.m */,
 				93E803351909FDE8004613BA /* Main.storyboard */,
@@ -155,6 +162,24 @@
 				93E8034E1909FDE8004613BA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93F1875D190A054F00E43644 /* ThirdPart */ = {
+			isa = PBXGroup;
+			children = (
+				93F1875E190A054F00E43644 /* libWeiboSDK */,
+			);
+			path = ThirdPart;
+			sourceTree = "<group>";
+		};
+		93F1875E190A054F00E43644 /* libWeiboSDK */ = {
+			isa = PBXGroup;
+			children = (
+				93F1875F190A054F00E43644 /* libWeiboSDK.a */,
+				93F18760190A054F00E43644 /* WeiboSDK.bundle */,
+				93F18761190A054F00E43644 /* WeiboSDK.h */,
+			);
+			path = libWeiboSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +262,7 @@
 				93E8033F1909FDE8004613BA /* Images.xcassets in Resources */,
 				93E8032E1909FDE7004613BA /* InfoPlist.strings in Resources */,
 				93E803371909FDE8004613BA /* Main.storyboard in Resources */,
+				93F18763190A054F00E43644 /* WeiboSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +413,10 @@
 				GCC_PREFIX_HEADER = "BadRenter/BadRenter-Prefix.pch";
 				INFOPLIST_FILE = "BadRenter/BadRenter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BadRenter/ThirdPart/libWeiboSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -401,6 +431,10 @@
 				GCC_PREFIX_HEADER = "BadRenter/BadRenter-Prefix.pch";
 				INFOPLIST_FILE = "BadRenter/BadRenter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BadRenter/ThirdPart/libWeiboSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -465,6 +499,7 @@
 				93E803571909FDE8004613BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93E803581909FDE8004613BA /* Build configuration list for PBXNativeTarget "BadRenterTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +508,7 @@
 				93E8035A1909FDE8004613BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
