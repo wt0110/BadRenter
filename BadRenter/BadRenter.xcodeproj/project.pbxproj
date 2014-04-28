@@ -23,6 +23,7 @@
 		933FF142190A424800B86056 /* BRAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 933FF141190A424800B86056 /* BRAppContext.m */; };
 		933FF145190A42BB00B86056 /* BRAppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 933FF144190A42BB00B86056 /* BRAppConfig.m */; };
 		933FF148190A431100B86056 /* BRAppUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 933FF147190A431100B86056 /* BRAppUser.m */; };
+		93E2A7B2190E980400E63760 /* BRRootTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E2A7B1190E980400E63760 /* BRRootTabBarViewController.m */; };
 		93E803241909FDE7004613BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E803231909FDE7004613BA /* Foundation.framework */; };
 		93E803261909FDE7004613BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E803251909FDE7004613BA /* CoreGraphics.framework */; };
 		93E803281909FDE7004613BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E803271909FDE7004613BA /* UIKit.framework */; };
@@ -86,6 +87,8 @@
 		933FF144190A42BB00B86056 /* BRAppConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAppConfig.m; sourceTree = "<group>"; };
 		933FF146190A431100B86056 /* BRAppUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAppUser.h; sourceTree = "<group>"; };
 		933FF147190A431100B86056 /* BRAppUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAppUser.m; sourceTree = "<group>"; };
+		93E2A7B0190E980400E63760 /* BRRootTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRRootTabBarViewController.h; sourceTree = "<group>"; };
+		93E2A7B1190E980400E63760 /* BRRootTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRRootTabBarViewController.m; sourceTree = "<group>"; };
 		93E803201909FDE7004613BA /* BadRenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BadRenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E803231909FDE7004613BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		93E803251909FDE7004613BA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -148,6 +151,8 @@
 				933FF0F3190A11B600B86056 /* BRBaseViewController.m */,
 				933FF0F5190A127500B86056 /* BRLoginViewController.h */,
 				933FF0F6190A127500B86056 /* BRLoginViewController.m */,
+				93E2A7B0190E980400E63760 /* BRRootTabBarViewController.h */,
+				93E2A7B1190E980400E63760 /* BRRootTabBarViewController.m */,
 			);
 			path = BRViewController;
 			sourceTree = "<group>";
@@ -406,6 +411,7 @@
 				933FF0F4190A11B600B86056 /* BRBaseViewController.m in Sources */,
 				93E8033A1909FDE8004613BA /* BRFirstViewController.m in Sources */,
 				933FF135190A412A00B86056 /* NSDate+RFC1123.m in Sources */,
+				93E2A7B2190E980400E63760 /* BRRootTabBarViewController.m in Sources */,
 				933FF13F190A41A400B86056 /* BRWeiboSDKManager.m in Sources */,
 				933FF137190A412A00B86056 /* NSString+MKNetworkKitAdditions.m in Sources */,
 				933FF13A190A412A00B86056 /* MKNetworkEngine.m in Sources */,

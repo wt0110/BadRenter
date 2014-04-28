@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BRAppUser : NSObject
-
+@interface BRAppUser : NSObject<NSCoding>
+@property (nonatomic, copy)NSString *userID;
+@property (nonatomic, copy)NSString *userName;
+@property (nonatomic, copy)NSString *accessToken;
 @end

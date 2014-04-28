@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BRWeiboSDKManager : NSObject
+@protocol BRWeiboSDKManagerDelegate <NSObject>
+- (void)weiboLoginInterrupt:(WBBaseResponse *)respose;
+- (void)weiboLoginComplete:(WBBaseResponse *)respose;
+@end
 
+@interface BRWeiboSDKManager : NSObject<WBHttpRequestDelegate, WeiboSDKDelegate>
+@property (nonatomic, weak) id<BRWeiboSDKManagerDelegate> delegate;
+
++ (BRWeiboSDKManager *)shareManager;
+- (void)loginWithWeibo:(NSDictionary *)userInfo scope:(NSString *)scope;
 @end

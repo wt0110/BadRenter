@@ -7,8 +7,9 @@
 //
 
 #import "BRBaseViewController.h"
+#import "BRWeiboSDKManager.h"
 
-@interface BRLoginViewController : BRBaseViewController<WBHttpRequestDelegate>
+@interface BRLoginViewController : BRBaseViewController<WBHttpRequestDelegate,BRWeiboSDKManagerDelegate>
 
 - (IBAction)weiboLoginButtonClick:(id)sender;
 @end

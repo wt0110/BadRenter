@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BRWeiboSDKManager.h"
+#import "BRAppUser.h"
 
 @interface BRAppContext : NSObject
 
+@property (nonatomic, readonly) BRWeiboSDKManager *weiboManager;
+@property (nonatomic, readonly) BRAppUser *currentUser;
++ (BRAppContext *)shareInstance;
 @end

@@ -16,11 +16,8 @@
     #import "BRBaseViewController.h"
 
     #import "WeiboSDK.h"
+    #import "BRAppContext.h"
 
-    //com.sina.weibo.SNWeiboSDKDemo
-    #define kWeiboAppKey         @"2956417372"
-    #define kWeiboSecretKey      @"58a4feeea602191dced6255a142f0790"
-
-    #define kRedirectURI         @"http://"
+    #define APPCONTEXT  [BRAppContext shareInstance]
 
 #endif
