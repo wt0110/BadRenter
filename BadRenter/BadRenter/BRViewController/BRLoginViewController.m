@@ -27,6 +27,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    if (APPCONTEXT.currentUser) {
+
+    }
 }
 
 - (void)didReceiveMemoryWarning

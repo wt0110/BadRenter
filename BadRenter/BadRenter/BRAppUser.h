@@ -12,4 +12,6 @@
 @property (nonatomic, copy)NSString *userID;
 @property (nonatomic, copy)NSString *userName;
 @property (nonatomic, copy)NSString *accessToken;
+
++(BRAppUser*)userInfoById:(NSString *)userId;
 @end

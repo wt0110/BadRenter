@@ -14,5 +14,7 @@
 
 @property (nonatomic, readonly) BRWeiboSDKManager *weiboManager;
 @property (nonatomic, readonly) BRAppUser *currentUser;
+@property (nonatomic, readonly) NSString *lastUserId;
+
 + (BRAppContext *)shareInstance;
 @end

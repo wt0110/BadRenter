@@ -7,10 +7,12 @@
 //
 
 #import "BRAppContext.h"
+static NSString * const kLastLoginUserId = @"kLastLoginUserId";
 
 @implementation BRAppContext
 @synthesize weiboManager = _weiboManager;
 @synthesize currentUser = _currentUser;
+@synthesize lastUserId = _lastUserId;
 
 + (BRAppContext *)shareInstance
 {
@@ -35,8 +37,30 @@
 - (BRAppUser *)currentUser
 {
     if (!_currentUser) {
-        //对user进行逆归档
+        if (self.lastUserId) {
+            _currentUser = [BRAppUser userInfoById:self.lastUserId];
+        }
     }
     return _currentUser;
+}
+
+- (void)setCurrentUser:(BRAppUser *)currentUser
+{
+    _currentUser = currentUser;
+    if (currentUser.userID) {
+        _lastUserId = currentUser.userID;
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        [userDefaults setObject:_lastUserId forKey:kLastLoginUserId];
+    }
+}
+
+- (NSString *)lastUserId
+{
+    if (!_lastUserId) {
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        _lastUserId = [userDefaults objectForKey:kLastLoginUserId];
+    }
+
+    return _lastUserId;
 }
 @end
